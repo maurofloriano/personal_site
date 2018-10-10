@@ -1,0 +1,56 @@
+body {
+    position: relative;
+}
+
+#sectionH {
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#e0f7fa;
+}
+
+#sectionP {
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#e0f7fa;
+}
+
+#sectionC {
+    padding-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#b2ebf2;
+}
+
+#sectionCt {
+    padding-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:#b2ebf2;
+}
+
+
+.photos {
+    height: 250;
+    width: 250;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0097a7;
+    color: white;
+    text-align: center;
+ }
+
+
+.fa {
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+
+}
