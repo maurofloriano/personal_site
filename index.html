@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaBg74Dasgipx6W5Yp9Z86ukO7LmG0px8&callback=initMap" type="text/javascript"></script>
+    <script src="pieChart.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
         
@@ -39,8 +41,10 @@
             <h2>About Mauro</h2>
                 <div>
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <img class="photos" id="my_photo" src="./images/my_photo.JPG">
+                            
+
                         </div>
                         <div class="col-md-5">    
                             <p>As the title may refer, I'm Mauro! A 24 years old boy who loves to watch soccer, code a little bit and take photos.</p>
@@ -48,27 +52,61 @@
                             <p>Currently, studing Computer Engineer and working as a intern on CI&T</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-2">
-                            <img class="photos" id="Santos_logo" src="./images/santos_logo.svg">  
-                        </div>
-                        <div class="col-md-5">
-                            <p>Just as I mentioned before, one of my passions is soccer, and my team Santos FC, where Pelé, the best player all time played.</p>
-                        </div>
-                    </div>
                 </div>
         </div>
         <div id='sectionP' class="container-fluid">
             <h2>Projects</h2>
-            <p>This is the section about projects </p>
+            <p>In this section, I'm going to show some of my projects developed during my years.</p>
+            <ul>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <p> Project 1 - JW perícias</p>
+                        <img class="projects" id="jw" src="./images/projeto1.PNG">
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <p> Project 2 - GCC</p>
+                        <img class="projects" id="jw" src="./images/gcc.png">                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-4">
+                        <p> Project 3 - Fotografia</p>
+                        <img class="projects" id="jw" src="./images/IMG_0929.JPG">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <p> Project 4 - Omegatel</p>
+                        <img class="projects" id="jw" src="./images/omegatel.PNG">
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <p> Project 5 - CI&T</p>
+                        <img class="projects" id="jw" src="./images/ci&t.jpg">                        
+                    </div>
+                </div>
+            </ul>
+
         </div>
         <div id='sectionC' class="container-fluid">
             <h2>Curriculum</h2>
-            <p>This is the section about my Curriculum</p>
+            <div id="piechart"></div>
         </div>
         <div id='sectionCt' class="container-fluid">
             <h2>Contact</h2>    
-            <p>This is the section to contact me </p>
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="map" />
+                </div>
+                <div class="col-md-3 ">
+                    <h3>Address</h3>
+                    <p>Av dos Andradas, 3000</p>
+                    <p>30260-070, Belo Horizonte, MG</p>
+                    <h3>Phone</h3>
+                    <p>(031) 99128-6315</p>
+                    <h3>E-mail</h3>
+                    <p>maurofloriano@gmail.com</p> 
+                </div>
+            </div>
         </div>
     </div>
 
