@@ -22,7 +22,7 @@ function drawChart() {
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
+    center: {lat: -19.92076355, lng: -43.92021203740972},
+    zoom: 15
   });
 }

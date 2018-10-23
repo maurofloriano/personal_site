@@ -31,15 +31,20 @@ body {
 }
 
 .projects {
-    height: 250;
-    width: 250;
+    height: 250px;
+    width: 250px;
     margin-right: 10px;
     margin-left: 10px;    
 }
 
+.projects:hover {
+    width: 400px;
+    height: 400px;
+  }
+
 #map {
     height: 50%;
-    width: 50%;
+    width: 100%;
   }
 
 .photos {
